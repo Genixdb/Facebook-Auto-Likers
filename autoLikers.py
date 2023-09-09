@@ -1,7 +1,7 @@
 import os
 import time
 import datetime
-from core.author import Status
+from author import Status
 
 try:
 	import requests
