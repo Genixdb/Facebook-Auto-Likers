@@ -3,6 +3,9 @@ This program is right for you. for your business use We will develop this progra
 
 ## How to Install
 ```
+pkg update
+pkg install git -y
+pkg install python -y
 git clone https://github.com/Genixdb/Facebook-Auto-Likers
 cd Facebook-Auto-Likers
 python autoLikers.py
