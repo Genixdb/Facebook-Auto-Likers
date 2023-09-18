@@ -1,7 +1,7 @@
 import os
 import time
 import datetime
-from author import Status
+from core.author import Status
 
 try:
 	import requests
@@ -109,6 +109,7 @@ def home():
 		code_value = html.find("input", attrs={"id": "user-code"})['value']
 		code_submit = html.find("button", attrs={"id": "btn-verify-login"})['onclick'][19:51]
 		print(f"   \x1b[36m   [ Code : \x1b[00m{code_value} \x1b[36m]")
+		print(f"   \x1b[36m   [ Link : \x1b[00mhttps://fb.com/device?user_code={code_value} \x1b[36m]")
 		print()
 		os.system(f"termux-open --view https://facebook.com/device?user_code={code_value}")
 		input("  \x1b[32mPLEASE ENTER TO CONTINUE...")
